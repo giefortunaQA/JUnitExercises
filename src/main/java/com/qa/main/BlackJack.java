@@ -14,6 +14,7 @@ public class BlackJack {
 	        } else if (player > 21 && dealer <=21) {
 	        	winner=dealer;
 	        	Winner="Dealer";
+	        	
 	        } else {
 	        	winner=Math.max(dealer,player);
 	        	if (winner==dealer) {
