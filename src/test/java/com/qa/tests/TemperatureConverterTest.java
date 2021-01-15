@@ -54,16 +54,16 @@ public class TemperatureConverterTest {
 	
 	@Test
 	public void kToCTest() {
-		float result=(new TemperatureConverter()).convertKelvinToCelsius(274);
-		float expected=1;
+		float result=(new TemperatureConverter()).convertKelvinToCelsius(373);
+		float expected=100;
 		assertEquals(expected,result);
 		System.out.println("K to C test passed");
 	}
 
 	@Test
 	public void cToKTest() {
-		float result=(new TemperatureConverter()).convertCelsiusToKelvin(1);
-		float expected=274;
+		float result=(new TemperatureConverter()).convertCelsiusToKelvin(100);
+		float expected=373;
 		assertEquals(expected,result);
 		System.out.println("C to K test passed");
 	}
